@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="H3kit Privacy Policy - Learn how we protect your data and respect your privacy">
-    <title>H3kit Privacy Policy</title>
+    <meta name="description" content="H3Kit Privacy Policy - Learn how we protect your data and respect your privacy">
+    <title>H3Kit Privacy Policy</title>
     <style>
         * {
             margin: 0;
@@ -13,32 +13,35 @@
         }
 
         :root {
-            --primary-color: #2c5f2d;
-            --secondary-color: #4a7c59;
-            --accent-color: #97c17a;
-            --text-dark: #1a1a1a;
-            --text-medium: #4a4a4a;
-            --text-light: #6a6a6a;
-            --bg-light: #f8f9fa;
+            /* H3Kit App Color Scheme */
+            --primary-color: #007AFF;
+            --success-color: #34C759;
+            --error-color: #FF3B30;
+            --warning-color: #FF9500;
+            --text-dark: #333;
+            --text-medium: #666;
+            --text-light: #999;
+            --bg-white: #ffffff;
+            --bg-light: #f5f5f5;
             --border-color: #e0e0e0;
-            --success-color: #28a745;
-            --danger-color: #dc3545;
-            --info-color: #17a2b8;
+            --shadow: rgba(0, 0, 0, 0.1);
         }
 
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            line-height: 1.7;
+            line-height: 1.6;
             color: var(--text-dark);
-            background-color: #ffffff;
+            background-color: var(--bg-light);
+            margin: 0;
+            padding: 0;
         }
 
         .header {
-            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            background-color: var(--primary-color);
             color: white;
-            padding: 3rem 2rem;
+            padding: 3rem 1.5rem 2rem;
             text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 8px var(--shadow);
         }
 
         .header h1 {
@@ -51,12 +54,19 @@
         .header .subtitle {
             font-size: 1.1rem;
             opacity: 0.95;
-            font-weight: 300;
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+
+        .header .emoji {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
         }
 
         .last-updated {
-            background-color: var(--bg-light);
-            padding: 1rem 2rem;
+            background-color: var(--bg-white);
+            padding: 1rem 1.5rem;
             text-align: center;
             color: var(--text-medium);
             font-size: 0.95rem;
@@ -66,14 +76,23 @@
         .container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 2rem 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 3px var(--shadow);
         }
 
         .toc {
-            background-color: var(--bg-light);
-            border-radius: 8px;
-            padding: 2rem;
-            margin: 2rem 0 3rem 0;
+            background-color: var(--bg-white);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            box-shadow: 0 1px 3px var(--shadow);
             border-left: 4px solid var(--primary-color);
         }
 
@@ -81,6 +100,7 @@
             color: var(--primary-color);
             margin-bottom: 1rem;
             font-size: 1.5rem;
+            font-weight: 600;
         }
 
         .toc ul {
@@ -97,94 +117,111 @@
             text-decoration: none;
             transition: color 0.2s;
             display: block;
-            padding: 0.3rem 0;
+            padding: 0.5rem 0;
+            font-weight: 500;
         }
 
         .toc a:hover {
             color: var(--primary-color);
-            text-decoration: underline;
         }
 
         .section {
-            margin: 3rem 0;
+            margin: 2rem 0;
             scroll-margin-top: 20px;
         }
 
         .section h2 {
-            color: var(--primary-color);
-            font-size: 1.8rem;
+            color: var(--text-dark);
+            font-size: 1.75rem;
             margin-bottom: 1rem;
+            font-weight: 700;
             padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--accent-color);
+            border-bottom: 2px solid var(--primary-color);
         }
 
         .section h3 {
-            color: var(--secondary-color);
+            color: var(--text-dark);
             font-size: 1.3rem;
-            margin-top: 2rem;
-            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            font-weight: 600;
         }
 
         .section h4 {
             color: var(--text-dark);
             font-size: 1.1rem;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
+            margin-top: 1.25rem;
+            margin-bottom: 0.5rem;
             font-weight: 600;
         }
 
         .section p {
             margin-bottom: 1rem;
             color: var(--text-medium);
+            line-height: 1.7;
         }
 
         .section ul, .section ol {
-            margin: 1rem 0 1rem 2rem;
+            margin: 1rem 0 1rem 1.5rem;
             color: var(--text-medium);
         }
 
         .section li {
             margin: 0.5rem 0;
+            line-height: 1.6;
         }
 
         .highlight-box {
-            background-color: #fff9e6;
-            border-left: 4px solid #ffc107;
-            padding: 1.5rem;
+            background-color: #FFF9E6;
+            border-left: 4px solid var(--warning-color);
+            padding: 1.25rem;
             margin: 1.5rem 0;
-            border-radius: 4px;
+            border-radius: 8px;
         }
 
         .info-box {
-            background-color: #e7f5ff;
-            border-left: 4px solid var(--info-color);
-            padding: 1.5rem;
+            background-color: #E7F5FF;
+            border-left: 4px solid var(--primary-color);
+            padding: 1.25rem;
             margin: 1.5rem 0;
-            border-radius: 4px;
+            border-radius: 8px;
         }
 
         .success-box {
-            background-color: #e8f5e9;
+            background-color: #E8F5E9;
             border-left: 4px solid var(--success-color);
-            padding: 1.5rem;
+            padding: 1.25rem;
             margin: 1.5rem 0;
-            border-radius: 4px;
+            border-radius: 8px;
         }
 
         .danger-box {
-            background-color: #ffebee;
-            border-left: 4px solid var(--danger-color);
-            padding: 1.5rem;
+            background-color: #FFEBEE;
+            border-left: 4px solid var(--error-color);
+            padding: 1.25rem;
             margin: 1.5rem 0;
-            border-radius: 4px;
+            border-radius: 8px;
+        }
+
+        .icon-text {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin: 0.75rem 0;
+        }
+
+        .icon-text .emoji {
+            font-size: 1.5rem;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 1.5rem 0;
-            background-color: white;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            background-color: var(--bg-white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 1px 3px var(--shadow);
         }
 
         th {
@@ -201,111 +238,74 @@
             color: var(--text-medium);
         }
 
+        tr:last-child td {
+            border-bottom: none;
+        }
+
         tr:hover {
             background-color: var(--bg-light);
         }
 
-        .quick-reference {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        .contact-card {
+            background-color: var(--bg-white);
+            border-radius: 12px;
             padding: 2rem;
-            border-radius: 8px;
-            margin: 3rem 0;
-        }
-
-        .quick-reference h2 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            text-align: center;
-        }
-
-        .reference-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-top: 1.5rem;
-        }
-
-        .reference-card {
-            background-color: white;
-            padding: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-        }
-
-        .reference-card h3 {
-            margin-top: 0;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .reference-card.can h3 { color: var(--success-color); }
-        .reference-card.dont h3 { color: var(--danger-color); }
-        .reference-card.contact h3 { color: var(--info-color); }
-
-        .reference-card ul {
-            list-style: none;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        .reference-card li {
-            padding: 0.5rem 0;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-
-        .reference-card.can li:before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: var(--success-color);
-            font-weight: bold;
-        }
-
-        .reference-card.dont li:before {
-            content: "✗";
-            position: absolute;
-            left: 0;
-            color: var(--danger-color);
-            font-weight: bold;
-        }
-
-        .contact-info {
-            background-color: var(--bg-light);
-            padding: 2rem;
-            border-radius: 8px;
             margin: 2rem 0;
-            text-align: center;
+            box-shadow: 0 2px 8px var(--shadow);
+            border: 2px solid var(--primary-color);
         }
 
-        .contact-info h2 {
+        .contact-card h3 {
             color: var(--primary-color);
             margin-bottom: 1rem;
+            font-size: 1.5rem;
         }
 
-        .contact-info a {
-            color: var(--info-color);
+        .contact-card p {
+            margin: 0.5rem 0;
+            color: var(--text-medium);
+        }
+
+        .contact-card a {
+            color: var(--primary-color);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
         }
 
-        .contact-info a:hover {
+        .contact-card a:hover {
             text-decoration: underline;
         }
 
         .footer {
-            background-color: var(--primary-color);
+            background-color: var(--text-dark);
             color: white;
             text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
         }
 
         .footer p {
             margin: 0.5rem 0;
             opacity: 0.9;
+        }
+
+        .footer .emoji {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
+
+        strong {
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
 
         @media (max-width: 768px) {
@@ -314,23 +314,15 @@
             }
 
             .container {
-                padding: 1rem;
+                padding: 1.5rem 1rem;
+            }
+
+            .card {
+                padding: 1.25rem;
             }
 
             .section h2 {
                 font-size: 1.5rem;
-            }
-
-            .section h3 {
-                font-size: 1.2rem;
-            }
-
-            .toc {
-                padding: 1.5rem;
-            }
-
-            .reference-grid {
-                grid-template-columns: 1fr;
             }
 
             table {
@@ -341,526 +333,390 @@
                 padding: 0.75rem;
             }
         }
-
-        @media (max-width: 480px) {
-            .header {
-                padding: 2rem 1rem;
-            }
-
-            .header h1 {
-                font-size: 1.75rem;
-            }
-
-            .header .subtitle {
-                font-size: 1rem;
-            }
-        }
     </style>
 </head>
 <body>
     <div class="header">
-        <h1>🍃 H3kit Privacy Policy</h1>
-        <p class="subtitle">Your privacy is our priority</p>
+        <span class="emoji">🧗</span>
+        <h1>H3Kit Privacy Policy</h1>
+        <p class="subtitle">Your Rope Access Kit Tracker</p>
     </div>
 
     <div class="last-updated">
-        <strong>Last Updated:</strong> October 5, 2025
+        <strong>Last Updated:</strong> October 7, 2025
     </div>
 
     <div class="container">
         <div class="info-box">
-            <p><strong>H3ight LLC</strong> ("H3ight," "we," "us," or "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, and protect your information when you use the H3kit mobile application (the "App") for iOS and Android.</p>
-            <p style="margin-bottom: 0;"><strong>By using H3kit, you agree to the collection and use of information as described in this Privacy Policy.</strong></p>
+            <div class="icon-text">
+                <span class="emoji">🤙</span>
+                <p><strong>Welcome!</strong> At H3Kit, we're committed to protecting your privacy while helping you manage your rope access equipment safely and efficiently.</p>
+            </div>
         </div>
 
-        <div class="toc">
+        <div class="toc card">
             <h2>Table of Contents</h2>
             <ul>
-                <li><a href="#section-1">1. Information We Collect</a></li>
-                <li><a href="#section-2">2. How We Use Your Information</a></li>
-                <li><a href="#section-3">3. How We Store and Protect Your Data</a></li>
-                <li><a href="#section-4">4. Data Sharing and Third Parties</a></li>
-                <li><a href="#section-5">5. Your Rights and Choices</a></li>
-                <li><a href="#section-6">6. Privacy Rights by Region</a></li>
-                <li><a href="#section-7">7. Children's Privacy</a></li>
-                <li><a href="#section-8">8. International Data Transfers</a></li>
-                <li><a href="#section-9">9. Mobile App-Specific Disclosures</a></li>
-                <li><a href="#section-10">10. Cookies and Tracking Technologies</a></li>
-                <li><a href="#section-11">11. Third-Party Links</a></li>
-                <li><a href="#section-12">12. Changes to This Privacy Policy</a></li>
-                <li><a href="#section-13">13. Contact Us</a></li>
-                <li><a href="#section-14">14. Data Processing Summary</a></li>
-                <li><a href="#quick-ref">Quick Reference: Your Privacy Rights</a></li>
+                <li><a href="#introduction">1. Introduction</a></li>
+                <li><a href="#information-collection">2. Information We Collect</a></li>
+                <li><a href="#how-we-use">3. How We Use Your Information</a></li>
+                <li><a href="#data-storage">4. Data Storage and Security</a></li>
+                <li><a href="#data-sharing">5. Data Sharing and Disclosure</a></li>
+                <li><a href="#your-rights">6. Your Rights and Choices</a></li>
+                <li><a href="#data-retention">7. Data Retention</a></li>
+                <li><a href="#children">8. Children's Privacy</a></li>
+                <li><a href="#international">9. International Data Transfers</a></li>
+                <li><a href="#changes">10. Changes to This Policy</a></li>
+                <li><a href="#contact">11. Contact Us</a></li>
             </ul>
         </div>
 
-        <div id="section-1" class="section">
-            <h2>1. Information We Collect</h2>
-            
-            <h3>1.1 Account Information</h3>
-            <p>When you create an H3kit account, we collect:</p>
-            <ul>
-                <li>Email address (required for account creation and login)</li>
-                <li>Name (first and last name)</li>
-                <li>Password (stored securely using industry-standard encryption)</li>
-                <li>Account creation date</li>
-            </ul>
-
-            <h3>1.2 Gear Data</h3>
-            <p>You voluntarily provide information about your rope access equipment:</p>
-            <ul>
-                <li>Gear descriptions (harnesses, ropes, carabiners, etc.)</li>
-                <li>Serial numbers and model information</li>
-                <li>Purchase dates and retirement dates</li>
-                <li>Inspection records (dates, status, notes)</li>
-                <li>Photos of equipment (stored in cloud storage)</li>
-                <li>Usage logs and tracking data</li>
-            </ul>
-
-            <h3>1.3 Job Data</h3>
-            <p>You may track work-related information:</p>
-            <ul>
-                <li>Job hours (start/end times, total hours)</li>
-                <li>Job locations (site names, addresses if provided)</li>
-                <li>Pay rates (hourly rates, total compensation)</li>
-                <li>Client/project names (if entered)</li>
-                <li>Job notes and descriptions</li>
-            </ul>
-
-            <h3>1.4 Technical Information</h3>
-            <p>We automatically collect certain technical data:</p>
-            <ul>
-                <li>Device information (device type, operating system, OS version)</li>
-                <li>App usage data (features used, session duration)</li>
-                <li>Crash reports and error logs</li>
-                <li>IP address (for security and analytics)</li>
-                <li>Unique device identifiers (for app functionality)</li>
-            </ul>
-
-            <h3>1.5 Location Information</h3>
-            <ul>
-                <li><strong>Precise location:</strong> We do NOT collect real-time GPS location tracking</li>
-                <li><strong>Job locations:</strong> Only collected when you manually enter job location data</li>
-                <li>The App does not run location services in the background</li>
-            </ul>
-
-            <h3>1.6 Information We Do NOT Collect</h3>
-            <ul>
-                <li>Social Security Numbers or government IDs</li>
-                <li>Payment card information (not applicable during beta)</li>
-                <li>Biometric data</li>
-                <li>Health information</li>
-                <li>Real-time location tracking</li>
-            </ul>
+        <div class="card">
+            <section id="introduction" class="section">
+                <h2>1. Introduction</h2>
+                <p>H3Kit ("we," "our," or "us") is a mobile application developed by H3ight LLC that helps rope access professionals track and manage their safety equipment, inspections, and compliance records. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.</p>
+                <p>By using H3Kit, you agree to the collection and use of information in accordance with this policy. If you do not agree with our policies and practices, please do not use our application.</p>
+            </section>
         </div>
 
-        <div id="section-2" class="section">
-            <h2>2. How We Use Your Information</h2>
-            
-            <h3>2.1 Primary Uses</h3>
-            <p>We use your data to:</p>
-            <ul>
-                <li>Provide App functionality (gear tracking, inspections, job logging)</li>
-                <li>Maintain your account (authentication, account management)</li>
-                <li>Store and sync your data across devices</li>
-                <li>Send important notifications (inspection reminders, account updates)</li>
-                <li>Provide customer support when you contact us</li>
-                <li>Improve the App (bug fixes, feature development)</li>
-            </ul>
-
-            <h3>2.2 Analytics and Improvement</h3>
-            <ul>
-                <li>We analyze anonymized, aggregated usage data to improve H3kit</li>
-                <li>We identify bugs, crashes, and performance issues</li>
-                <li>We understand which features are most valuable to users</li>
-                <li>Individual user data is never shared in analytics reports</li>
-            </ul>
-
-            <h3>2.3 Communications</h3>
-            <p>We may send you:</p>
-            <ul>
-                <li>Transactional emails (account verification, password resets)</li>
-                <li>App updates and new features (opt-out available)</li>
-                <li>Inspection reminders (based on your settings)</li>
-                <li>Important security or policy updates (cannot opt-out)</li>
-            </ul>
-            <p>You can manage email preferences in your account settings.</p>
-        </div>
-
-        <div id="section-3" class="section">
-            <h2>3. How We Store and Protect Your Data</h2>
-            
-            <h3>3.1 Data Storage Infrastructure</h3>
-            <ul>
-                <li><strong>Backend server:</strong> Your account and gear data are stored on Render (cloud hosting platform)</li>
-                <li><strong>Photo storage:</strong> Equipment photos are stored in secure cloud storage with encrypted transmission</li>
-                <li><strong>Data encryption:</strong> All data is encrypted in transit (TLS/SSL) and at rest</li>
-                <li><strong>Backup systems:</strong> Regular automated backups ensure data recovery capabilities</li>
-            </ul>
-
-            <h3>3.2 Data Location</h3>
-            <ul>
-                <li>Data is stored on servers located in the United States</li>
-                <li>Cloud storage providers may have data centers in multiple regions</li>
-                <li>Data may be transferred across borders for storage and processing</li>
-            </ul>
-
-            <h3>3.3 Security Measures</h3>
-            <p>We implement industry-standard security practices:</p>
-            <ul>
-                <li><strong>Encrypted data transmission</strong> (HTTPS/TLS)</li>
-                <li><strong>Secure password hashing</strong> (bcrypt or similar)</li>
-                <li><strong>Access controls</strong> (role-based permissions, authentication)</li>
-                <li><strong>Regular security audits</strong> and vulnerability assessments</li>
-                <li><strong>Secure cloud infrastructure</strong> (Render and cloud storage providers)</li>
-            </ul>
-
-            <h3>3.4 Data Retention</h3>
-            <ul>
-                <li><strong>Active accounts:</strong> Data is retained while your account is active</li>
-                <li><strong>Deleted accounts:</strong> Data is deleted within 30 days of account deletion</li>
-                <li><strong>Backups:</strong> Data may persist in backups for up to 90 days after deletion</li>
-                <li><strong>Legal obligations:</strong> Some data may be retained longer if required by law</li>
-            </ul>
-        </div>
-
-        <div id="section-4" class="section">
-            <h2>4. Data Sharing and Third Parties</h2>
-            
-            <h3>4.1 No Third-Party Sharing</h3>
-            <div class="success-box">
-                <p style="margin-bottom: 0;"><strong>We do NOT sell, rent, or share your personal data with third parties for their marketing purposes.</strong></p>
-            </div>
-
-            <h3>4.2 Service Providers</h3>
-            <p>We share limited data with trusted service providers who help us operate H3kit:</p>
-            <ul>
-                <li><strong>Render</strong> (backend hosting) - Stores account and gear data</li>
-                <li><strong>Cloud storage provider</strong> (photo storage) - Stores equipment photos</li>
-                <li><strong>Email service provider</strong> (transactional emails) - Sends account notifications</li>
-                <li><strong>Analytics services</strong> (anonymized data only) - Helps improve the App</li>
-            </ul>
-            <p>All service providers are contractually obligated to protect your data and use it only for providing services to H3ight LLC.</p>
-
-            <h3>4.3 Legal Requirements</h3>
-            <p>We may disclose your information if required to:</p>
-            <ul>
-                <li>Comply with valid legal processes (subpoenas, court orders)</li>
-                <li>Enforce our Terms of Service</li>
-                <li>Protect the rights, property, or safety of H3ight LLC, our users, or the public</li>
-                <li>Investigate fraud or security issues</li>
-            </ul>
-
-            <h3>4.4 Business Transfers</h3>
-            <p>If H3ight LLC is acquired or merged with another company, your data may be transferred to the new owner. You will be notified of any such change and your data will remain subject to privacy protections.</p>
-        </div>
-
-        <div id="section-5" class="section">
-            <h2>5. Your Rights and Choices</h2>
-            
-            <h3>5.1 Access and Control</h3>
-            <p>You have the right to:</p>
-            <ul>
-                <li><strong>Access your data:</strong> View all data stored in your account through the App</li>
-                <li><strong>Export your data:</strong> Download a copy of your information at any time</li>
-                <li><strong>Correct your data:</strong> Update or correct inaccurate information</li>
-                <li><strong>Delete your data:</strong> Request account and data deletion</li>
-            </ul>
-
-            <h3>5.2 Account Deletion</h3>
-            <p>You can delete your account at any time:</p>
-            <ol>
-                <li>Open the App and go to <strong>Settings > Account</strong></li>
-                <li>Select <strong>Delete Account</strong></li>
-                <li>Confirm deletion</li>
-                <li>Your data will be removed within 30 days</li>
-            </ol>
-            <p>Alternatively, contact us at <a href="mailto:work@h3ight.com">work@h3ight.com</a> to request deletion.</p>
-
-            <h3>5.3 Communication Preferences</h3>
-            <ul>
-                <li><strong>Marketing emails:</strong> Opt out via unsubscribe links in emails</li>
-                <li><strong>Push notifications:</strong> Manage in device settings or App settings</li>
-                <li><strong>Inspection reminders:</strong> Configure or disable in the App</li>
-            </ul>
-
-            <h3>5.4 Data Portability</h3>
-            <p>You can export your data in common formats (CSV, JSON, PDF) through the App's export features.</p>
-        </div>
-
-        <div id="section-6" class="section">
-            <h2>6. Privacy Rights by Region</h2>
-            
-            <h3>6.1 GDPR Rights (European Users)</h3>
-            <p>If you are located in the European Economic Area (EEA), UK, or Switzerland, you have additional rights under GDPR:</p>
-            <ul>
-                <li><strong>Right to access:</strong> Request a copy of your personal data</li>
-                <li><strong>Right to rectification:</strong> Correct inaccurate data</li>
-                <li><strong>Right to erasure:</strong> Request deletion of your data ("right to be forgotten")</li>
-                <li><strong>Right to restrict processing:</strong> Limit how we use your data</li>
-                <li><strong>Right to data portability:</strong> Receive your data in a machine-readable format</li>
-                <li><strong>Right to object:</strong> Object to data processing based on legitimate interests</li>
-                <li><strong>Right to withdraw consent:</strong> Withdraw consent at any time</li>
-                <li><strong>Right to lodge a complaint:</strong> Contact your local data protection authority</li>
-            </ul>
-
-            <h4>Legal Basis for Processing:</h4>
-            <ul>
-                <li><strong>Contract performance:</strong> Processing necessary to provide the App</li>
-                <li><strong>Consent:</strong> You consent to data processing when creating an account</li>
-                <li><strong>Legitimate interests:</strong> Improving the App and preventing fraud</li>
-            </ul>
-            <p><strong>Data Protection Officer:</strong> Contact <a href="mailto:work@h3ight.com">work@h3ight.com</a> for GDPR inquiries.</p>
-
-            <h3>6.2 CCPA Rights (California Users)</h3>
-            <p>If you are a California resident, you have rights under the California Consumer Privacy Act (CCPA):</p>
-            <ul>
-                <li><strong>Right to know:</strong> What personal information we collect and how it's used</li>
-                <li><strong>Right to delete:</strong> Request deletion of your personal information</li>
-                <li><strong>Right to opt-out:</strong> Opt out of "sale" of personal information (Note: We do NOT sell data)</li>
-                <li><strong>Right to non-discrimination:</strong> Equal service regardless of exercising privacy rights</li>
-            </ul>
-
-            <h4>California-Specific Disclosures:</h4>
-            <ul>
-                <li><strong>Categories of data collected:</strong> See Section 1 above</li>
-                <li><strong>Sources:</strong> Directly from you and automatically through App usage</li>
-                <li><strong>Business purposes:</strong> See Section 2 above</li>
-                <li><strong>Data sharing:</strong> Only with service providers (Section 4.2)</li>
-                <li><strong>Sale of data:</strong> We do NOT sell personal information</li>
-            </ul>
-            <p>To exercise your CCPA rights, contact <a href="mailto:work@h3ight.com">work@h3ight.com</a> or use the in-app support feature.</p>
-
-            <h3>6.3 Other Regions</h3>
-            <p>Users in other jurisdictions may have similar rights under local privacy laws. Contact us to exercise your rights or ask questions about data protection in your region.</p>
-        </div>
-
-        <div id="section-7" class="section">
-            <h2>7. Children's Privacy</h2>
-            <div class="highlight-box">
-                <p style="margin-bottom: 0;"><strong>H3kit is not intended for users under 18 years of age.</strong> We do not knowingly collect personal information from children under 18. If you believe a child under 18 has provided us with personal information, please contact us immediately at <a href="mailto:work@h3ight.com">work@h3ight.com</a>, and we will delete the information.</p>
-            </div>
-        </div>
-
-        <div id="section-8" class="section">
-            <h2>8. International Data Transfers</h2>
-            <p>H3ight LLC is based in the United States. If you access the App from outside the U.S., your data will be transferred to and processed in the United States. By using H3kit, you consent to the transfer of your data to the U.S., which may have different data protection laws than your country.</p>
-            <p>For EEA users, we implement appropriate safeguards (such as Standard Contractual Clauses) to protect data transferred outside the EEA.</p>
-        </div>
-
-        <div id="section-9" class="section">
-            <h2>9. Mobile App-Specific Disclosures</h2>
-            
-            <h3>9.1 iOS Disclosures (Apple App Store)</h3>
-            <p>In compliance with Apple's App Store requirements:</p>
-            
-            <h4>Data Linked to You:</h4>
-            <ul>
-                <li>Account information (name, email)</li>
-                <li>User-generated content (gear data, photos, job records)</li>
-                <li>Usage data (features used, session times)</li>
-            </ul>
-
-            <h4>Data NOT Collected:</h4>
-            <ul>
-                <li>Precise location (GPS tracking)</li>
-                <li>Contacts, photos from device gallery (unless you explicitly select them)</li>
-                <li>Health data</li>
-                <li>Financial information (during beta)</li>
-            </ul>
-
-            <p><strong>Tracking:</strong> We do NOT use data for tracking across apps/websites owned by other companies.</p>
-
-            <h3>9.2 Android Disclosures (Google Play Store)</h3>
-            <p>In compliance with Google Play's requirements:</p>
-            
-            <h4>Data Safety:</h4>
-            <ul>
-                <li>Data is encrypted in transit (TLS)</li>
-                <li>Data is encrypted at rest (server-side encryption)</li>
-                <li>You can request data deletion at any time</li>
-                <li>Data is NOT shared with third parties except service providers</li>
-            </ul>
-
-            <h4>Permissions:</h4>
-            <div class="info-box">
-                <ul style="margin-bottom: 0;">
-                    <li><strong>Camera:</strong> To take photos of equipment (optional)</li>
-                    <li><strong>Storage:</strong> To save photos and export data (optional)</li>
-                    <li><strong>Internet:</strong> Required for data sync and account functions</li>
-                    <li><strong>Notifications:</strong> For inspection reminders (optional)</li>
+        <div class="card">
+            <section id="information-collection" class="section">
+                <h2>2. Information We Collect</h2>
+                
+                <h3>2.1 Personal Information</h3>
+                <p>We collect information that you provide directly to us when you:</p>
+                <ul>
+                    <li>Create an account (name, email address, password)</li>
+                    <li>Update your profile information</li>
+                    <li>Contact us for support</li>
+                    <li>Provide feedback or participate in surveys</li>
                 </ul>
-            </div>
-            <p>All permissions are requested with clear explanations when needed.</p>
 
-            <h3>9.3 Push Notifications</h3>
-            <ul>
-                <li>We use push notifications for inspection reminders and important alerts</li>
-                <li>You can disable notifications in device settings or the App</li>
-                <li>Notification tokens are stored securely and not shared with third parties</li>
-            </ul>
-        </div>
+                <h3>2.2 Equipment and Inspection Data</h3>
+                <p>To provide our core services, we collect and store:</p>
+                <ul>
+                    <li>Gear inventory information (equipment names, types, serial numbers, purchase dates)</li>
+                    <li>Inspection records (dates, results, notes, photos)</li>
+                    <li>Job information (client names, dates, locations, hours worked)</li>
+                    <li>Compliance reports and documentation</li>
+                </ul>
 
-        <div id="section-10" class="section">
-            <h2>10. Cookies and Tracking Technologies</h2>
-            
-            <h3>10.1 App Usage</h3>
-            <p>The H3kit mobile app does NOT use traditional web cookies. However, we use similar technologies:</p>
-            <ul>
-                <li><strong>Local storage:</strong> To cache data and improve performance</li>
-                <li><strong>Session tokens:</strong> To keep you logged in securely</li>
-                <li><strong>Analytics SDKs:</strong> To collect anonymized usage data</li>
-            </ul>
+                <h3>2.3 Photos and Media</h3>
+                <p>With your permission, we access your device's camera and photo library to:</p>
+                <ul>
+                    <li>Take photos of equipment during inspections</li>
+                    <li>Attach existing photos to inspection records</li>
+                    <li>Document equipment condition and compliance</li>
+                </ul>
 
-            <h3>10.2 Website (if applicable)</h3>
-            <p>If you visit our website (not the mobile app), we may use:</p>
-            <ul>
-                <li><strong>Essential cookies:</strong> For website functionality</li>
-                <li><strong>Analytics cookies:</strong> To understand website traffic (anonymized)</li>
-            </ul>
-            <p>You can manage cookie preferences through your browser settings.</p>
-        </div>
-
-        <div id="section-11" class="section">
-            <h2>11. Third-Party Links</h2>
-            <p>H3kit may contain links to third-party websites or services (e.g., manufacturer websites, training resources). This Privacy Policy does NOT apply to those external sites. We are not responsible for the privacy practices of third parties. Please review their privacy policies before providing any information.</p>
-        </div>
-
-        <div id="section-12" class="section">
-            <h2>12. Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time to reflect changes in:</p>
-            <ul>
-                <li>App features and functionality</li>
-                <li>Legal requirements</li>
-                <li>Our data practices</li>
-            </ul>
-
-            <h3>How We Notify You:</h3>
-            <ul>
-                <li><strong>Material changes:</strong> Email notification and/or in-app alert</li>
-                <li><strong>Minor changes:</strong> Updated "Last Updated" date at the top</li>
-                <li><strong>Continued use:</strong> Using the App after changes indicates acceptance</li>
-            </ul>
-            <p>You can always view the current Privacy Policy in the App (Settings > Privacy Policy) or at <a href="mailto:work@h3ight.com">work@h3ight.com</a>.</p>
-        </div>
-
-        <div id="section-13" class="section">
-            <h2>13. Contact Us</h2>
-            <div class="contact-info">
-                <h3>Questions, Concerns, or Requests</h3>
-                <p>If you have questions about this Privacy Policy or want to exercise your privacy rights, contact us:</p>
-                <p style="margin-top: 1.5rem;">
-                    <strong>Email:</strong> <a href="mailto:work@h3ight.com">work@h3ight.com</a><br>
-                    <strong>Support:</strong> Use the "Contact Us" feature in the App<br>
-                    <strong>Mail:</strong><br>
-                    H3ight LLC<br>
-                    9417 Valley Hills Ave, Las Vegas, NV 89134<br>
-                    Nevada, USA
-                </p>
-                <p style="margin-top: 1rem;"><strong>Response Time:</strong> We aim to respond to privacy requests within 30 days (or as required by applicable law).</p>
-            </div>
-        </div>
-
-        <div id="section-14" class="section">
-            <h2>14. Data Processing Summary</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>What We Collect</th>
-                        <th>Why We Collect It</th>
-                        <th>Legal Basis</th>
-                        <th>How Long We Keep It</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Email, name</td>
-                        <td>Account creation and login</td>
-                        <td>Contract, Consent</td>
-                        <td>While account is active + 30 days</td>
-                    </tr>
-                    <tr>
-                        <td>Gear data, photos</td>
-                        <td>Core app functionality</td>
-                        <td>Contract, Consent</td>
-                        <td>While account is active + 30 days</td>
-                    </tr>
-                    <tr>
-                        <td>Job data</td>
-                        <td>User-requested tracking</td>
-                        <td>Contract, Consent</td>
-                        <td>While account is active + 30 days</td>
-                    </tr>
-                    <tr>
-                        <td>Device info, usage data</td>
-                        <td>App improvement, bug fixes</td>
-                        <td>Legitimate interest</td>
-                        <td>Anonymized after 90 days</td>
-                    </tr>
-                    <tr>
-                        <td>IP address</td>
-                        <td>Security, fraud prevention</td>
-                        <td>Legitimate interest</td>
-                        <td>90 days</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-        <div class="section">
-            <h2>15. Acknowledgment</h2>
-            <div class="highlight-box">
-                <p style="margin-bottom: 0;">By using H3kit, you acknowledge that you have read and understood this Privacy Policy and agree to the collection, use, and sharing of your information as described herein.</p>
-            </div>
-            <div style="margin-top: 2rem; padding: 1.5rem; background-color: var(--bg-light); border-radius: 8px;">
-                <p><strong>Company Information:</strong><br>
-                H3ight LLC<br>
-                A Nevada Limited Liability Company<br>
-                9417 Valley Hills Ave, Las Vegas, NV 89134<br>
-                <a href="mailto:work@h3ight.com">work@h3ight.com</a></p>
-                <p style="margin-bottom: 0;"><em>This Privacy Policy is effective as of the "Last Updated" date shown above.</em></p>
-            </div>
-        </div>
-
-        <div id="quick-ref" class="quick-reference">
-            <h2>Quick Reference: Your Privacy Rights</h2>
-            <div class="reference-grid">
-                <div class="reference-card can">
-                    <h3>✓ You CAN:</h3>
-                    <ul>
-                        <li>Access all your data anytime</li>
-                        <li>Export your data in portable formats</li>
-                        <li>Correct or update your information</li>
-                        <li>Delete your account and data</li>
-                        <li>Opt out of marketing emails</li>
-                        <li>Disable push notifications</li>
-                        <li>Request a copy of your data (GDPR/CCPA)</li>
-                    </ul>
+                <div class="highlight-box">
+                    <div class="icon-text">
+                        <span class="emoji">⚠️</span>
+                        <p><strong>Important:</strong> Photos are stored securely and are only used for your equipment tracking and inspection documentation purposes.</p>
+                    </div>
                 </div>
-                <div class="reference-card dont">
-                    <h3>✗ We DON'T:</h3>
-                    <ul>
-                        <li>Sell your data to third parties</li>
-                        <li>Share your data for marketing purposes</li>
-                        <li>Track your real-time location</li>
-                        <li>Collect data from children under 18</li>
-                        <li>Share your data without security protections</li>
-                    </ul>
+
+                <h3>2.4 Automatically Collected Information</h3>
+                <p>When you use H3Kit, we may automatically collect:</p>
+                <ul>
+                    <li>Device information (model, operating system, unique device identifiers)</li>
+                    <li>Usage data (features accessed, time spent in app, interaction patterns)</li>
+                    <li>Log data (IP address, access times, app crashes, performance data)</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="how-we-use" class="section">
+                <h2>3. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes:</p>
+
+                <h3>3.1 Core Service Delivery</h3>
+                <ul>
+                    <li>Provide and maintain the H3Kit application</li>
+                    <li>Manage your gear inventory and inspection schedules</li>
+                    <li>Generate compliance reports and documentation</li>
+                    <li>Send inspection reminders and notifications</li>
+                    <li>Track job hours and calculate pay</li>
+                </ul>
+
+                <h3>3.2 Service Improvement</h3>
+                <ul>
+                    <li>Analyze usage patterns to improve features</li>
+                    <li>Develop new functionality based on user needs</li>
+                    <li>Fix bugs and optimize performance</li>
+                    <li>Conduct research and analytics</li>
+                </ul>
+
+                <h3>3.3 Communication</h3>
+                <ul>
+                    <li>Respond to your inquiries and support requests</li>
+                    <li>Send important updates about the service</li>
+                    <li>Notify you about changes to our policies</li>
+                    <li>Request feedback and conduct surveys (with your consent)</li>
+                </ul>
+
+                <h3>3.4 Security and Compliance</h3>
+                <ul>
+                    <li>Protect against fraud and unauthorized access</li>
+                    <li>Enforce our terms of service</li>
+                    <li>Comply with legal obligations</li>
+                    <li>Maintain data security and integrity</li>
+                </ul>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="data-storage" class="section">
+                <h2>4. Data Storage and Security</h2>
+
+                <h3>4.1 Security Measures</h3>
+                <p>We implement industry-standard security measures to protect your information:</p>
+                <ul>
+                    <li>Encryption of data in transit using HTTPS/TLS</li>
+                    <li>Secure password hashing and authentication</li>
+                    <li>Regular security audits and updates</li>
+                    <li>Access controls and authentication requirements</li>
+                    <li>Secure cloud infrastructure with reputable providers</li>
+                </ul>
+
+                <div class="success-box">
+                    <div class="icon-text">
+                        <span class="emoji">🤘</span>
+                        <p><strong>Security First:</strong> Your data is encrypted and stored on secure servers. We never sell your personal information to third parties.</p>
+                    </div>
                 </div>
-                <div class="reference-card contact">
-                    <h3>✉ Contact Us:</h3>
-                    <p style="margin-top: 1rem;">For privacy questions or to exercise your rights:</p>
-                    <p style="margin-top: 1rem; font-size: 1.1rem;"><strong><a href="mailto:work@h3ight.com">work@h3ight.com</a></strong></p>
-                    <p style="margin-top: 1.5rem; font-size: 0.95rem; color: var(--text-light);">Stay safe, keep tracking, and trust that your data is protected with H3kit. 🍃</p>
+
+                <h3>4.2 Data Storage Location</h3>
+                <p>Your data is stored on secure cloud servers provided by trusted infrastructure partners. We use services that comply with industry security standards and regulations.</p>
+
+                <h3>4.3 Limitations</h3>
+                <p>While we strive to protect your information, no method of transmission over the internet or electronic storage is 100% secure. We cannot guarantee absolute security but continuously work to maintain the highest standards of data protection.</p>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="data-sharing" class="section">
+                <h2>5. Data Sharing and Disclosure</h2>
+
+                <h3>5.1 We Do Not Sell Your Data</h3>
+                <p>We do not sell, rent, or trade your personal information to third parties for marketing purposes.</p>
+
+                <h3>5.2 Service Providers</h3>
+                <p>We may share your information with trusted third-party service providers who assist us in:</p>
+                <ul>
+                    <li>Cloud hosting and data storage</li>
+                    <li>Analytics and performance monitoring</li>
+                    <li>Customer support services</li>
+                    <li>Payment processing (if applicable)</li>
+                </ul>
+                <p>These providers are contractually obligated to protect your information and use it only for the purposes we specify.</p>
+
+                <h3>5.3 Legal Requirements</h3>
+                <p>We may disclose your information if required to do so by law or in response to:</p>
+                <ul>
+                    <li>Valid legal processes (subpoenas, court orders)</li>
+                    <li>Government or regulatory requests</li>
+                    <li>Protection of our rights, property, or safety</li>
+                    <li>Prevention of fraud or illegal activities</li>
+                </ul>
+
+                <h3>5.4 Business Transfers</h3>
+                <p>In the event of a merger, acquisition, or sale of assets, your information may be transferred to the acquiring entity. We will notify you of any such change and provide options regarding your data.</p>
+
+                <h3>5.5 With Your Consent</h3>
+                <p>We may share your information with other parties when you explicitly consent to such sharing.</p>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="your-rights" class="section">
+                <h2>6. Your Rights and Choices</h2>
+
+                <h3>6.1 Access and Portability</h3>
+                <p>You have the right to:</p>
+                <ul>
+                    <li>Access your personal information stored in H3Kit</li>
+                    <li>Request a copy of your data in a portable format</li>
+                    <li>Export your gear inventory and inspection records</li>
+                </ul>
+
+                <h3>6.2 Correction and Updates</h3>
+                <p>You can update your personal information at any time through the app's profile settings. You can also modify or delete gear and inspection records as needed.</p>
+
+                <h3>6.3 Deletion</h3>
+                <p>You have the right to request deletion of your account and associated data. To do so:</p>
+                <ol>
+                    <li>Contact us at <a href="mailto:work@h3ight.com">work@h3ight.com</a></li>
+                    <li>Specify that you want your account deleted</li>
+                    <li>We will process your request within 30 days</li>
+                </ol>
+
+                <div class="danger-box">
+                    <div class="icon-text">
+                        <span class="emoji">⚠️</span>
+                        <p><strong>Note:</strong> Account deletion is permanent and cannot be undone. All your gear records, inspections, and job data will be permanently deleted.</p>
+                    </div>
+                </div>
+
+                <h3>6.4 Marketing Communications</h3>
+                <p>You can opt out of promotional emails by:</p>
+                <ul>
+                    <li>Clicking the unsubscribe link in any marketing email</li>
+                    <li>Adjusting your notification preferences in the app</li>
+                    <li>Contacting us directly</li>
+                </ul>
+                <p>Note: You will still receive essential service-related communications (e.g., inspection reminders, security alerts).</p>
+
+                <h3>6.5 Camera and Photo Access</h3>
+                <p>You can revoke camera and photo library permissions at any time through your device settings. This will prevent the app from accessing your camera or photos for new inspections.</p>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="data-retention" class="section">
+                <h2>7. Data Retention</h2>
+                <p>We retain your information for as long as necessary to provide our services and comply with legal obligations:</p>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Retention Period</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Account Information</td>
+                            <td>Until account deletion or 2 years of inactivity</td>
+                        </tr>
+                        <tr>
+                            <td>Gear and Inspection Records</td>
+                            <td>Until account deletion or manual removal</td>
+                        </tr>
+                        <tr>
+                            <td>Job and Pay Records</td>
+                            <td>7 years (for tax and compliance purposes)</td>
+                        </tr>
+                        <tr>
+                            <td>Support Communications</td>
+                            <td>3 years after resolution</td>
+                        </tr>
+                        <tr>
+                            <td>Usage and Analytics Data</td>
+                            <td>2 years</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>After the retention period, we securely delete or anonymize your information. Some data may be retained longer if required by law or for legitimate business purposes (e.g., dispute resolution, fraud prevention).</p>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="children" class="section">
+                <h2>8. Children's Privacy</h2>
+                <p>H3Kit is intended for use by rope access professionals and is not directed to children under the age of 18. We do not knowingly collect personal information from children under 18.</p>
+                <p>If we become aware that we have collected personal information from a child under 18 without parental consent, we will take steps to delete that information promptly.</p>
+                <p>If you believe we have collected information from a child under 18, please contact us immediately at <a href="mailto:work@h3ight.com">work@h3ight.com</a>.</p>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="international" class="section">
+                <h2>9. International Data Transfers</h2>
+                <p>H3Kit is operated from the United States. If you are accessing the app from outside the United States, please be aware that your information may be transferred to, stored, and processed in the United States or other countries where our service providers operate.</p>
+                <p>By using H3Kit, you consent to the transfer of your information to countries outside your country of residence, which may have different data protection laws than your country.</p>
+                <p>We take appropriate measures to ensure that your information receives an adequate level of protection in accordance with this Privacy Policy and applicable laws.</p>
+            </section>
+        </div>
+
+        <div class="card">
+            <section id="changes" class="section">
+                <h2>10. Changes to This Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors.</p>
+
+                <h3>10.1 Notification of Changes</h3>
+                <p>When we make material changes to this policy, we will:</p>
+                <ul>
+                    <li>Update the "Last Updated" date at the top of this policy</li>
+                    <li>Notify you through the app or via email</li>
+                    <li>Request your consent if required by law</li>
+                </ul>
+
+                <h3>10.2 Your Acceptance</h3>
+                <p>Your continued use of H3Kit after changes to this Privacy Policy constitutes your acceptance of the updated policy. If you do not agree with the changes, you should stop using the app and request account deletion.</p>
+
+                <h3>10.3 Review</h3>
+                <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.</p>
+            </section>
+        </div>
+
+        <div class="contact-card">
+            <section id="contact" class="section">
+                <h3>11. Contact Us</h3>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                
+                <div style="margin-top: 1.5rem;">
+                    <p><strong>H3ight LLC</strong></p>
+                    <p><strong>Email:</strong> <a href="mailto:work@h3ight.com">work@h3ight.com</a></p>
+                    <p><strong>Address:</strong> 9417 Valley Hills Ave, Las Vegas, NV 89134</p>
+                </div>
+
+                <div class="info-box" style="margin-top: 1.5rem;">
+                    <div class="icon-text">
+                        <span class="emoji">🤙</span>
+                        <p>We aim to respond to all inquiries within 48 hours. For urgent privacy concerns, please mark your email as "URGENT - Privacy Request".</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="card">
+            <section class="section">
+                <h2>Additional Information for Specific Jurisdictions</h2>
+
+                <h3>California Residents (CCPA)</h3>
+                <p>If you are a California resident, you have additional rights under the California Consumer Privacy Act (CCPA):</p>
+                <ul>
+                    <li>Right to know what personal information we collect, use, and disclose</li>
+                    <li>Right to request deletion of your personal information</li>
+                    <li>Right to opt-out of the sale of personal information (we do not sell your information)</li>
+                    <li>Right to non-discrimination for exercising your privacy rights</li>
+                </ul>
+                <p>To exercise these rights, contact us at <a href="mailto:work@h3ight.com">work@h3ight.com</a>.</p>
+
+                <h3>European Union Residents (GDPR)</h3>
+                <p>If you are in the European Union, you have rights under the General Data Protection Regulation (GDPR):</p>
+                <ul>
+                    <li>Right to access your personal data</li>
+                    <li>Right to rectification of inaccurate data</li>
+                    <li>Right to erasure ("right to be forgotten")</li>
+                    <li>Right to restrict processing</li>
+                    <li>Right to data portability</li>
+                    <li>Right to object to processing</li>
+                    <li>Right to withdraw consent</li>
+                </ul>
+                <p>To exercise these rights or file a complaint with a supervisory authority, contact us at <a href="mailto:work@h3ight.com">work@h3ight.com</a>.</p>
+            </section>
+        </div>
+
+        <div class="success-box">
+            <div class="icon-text">
+                <span class="emoji">🤘</span>
+                <div>
+                    <p><strong>Thank you for trusting H3Kit with your rope access equipment management!</strong></p>
+                    <p style="margin-top: 0.5rem;">We're committed to protecting your privacy while helping you stay safe and compliant. If you have any questions or concerns, we're here to help.</p>
                 </div>
             </div>
         </div>
     </div>
 
     <div class="footer">
-        <p><strong>H3ight LLC</strong> • Nevada, USA</p>
-        <p>&copy; 2025 H3kit. All rights reserved.</p>
-        <p style="margin-top: 1rem; opacity: 0.8;">Professional rope access equipment tracking and management</p>
+        <span class="emoji">🧗</span>
+        <p><strong>H3Kit</strong> - Your Rope Access Kit Tracker</p>
+        <p>© 2025 H3ight LLC. All rights reserved.</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">Made with care for rope access professionals 🤙</p>
     </div>
 </body>
 </html>
